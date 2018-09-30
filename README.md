@@ -1,5 +1,5 @@
 # eztrans
-check the sorcecode for more information. default is using google api (accessable from mainland)
+check the source code for more information. default is using google api (accessable from mainland)
 # usage
 ```
 # ./eztrans --help
