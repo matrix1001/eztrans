@@ -11,10 +11,20 @@ else {                                   ; fallback solution
         Clipboard := clipboardOld        ; restore clipboard contents
     }
 }
-MsgBox % text
+http_get(text)
 return
 
-^j::
-cmd := "cmd.exe /q /c dir"
-MsgBox % ComObjCreate("WScript.Shell").Exec(cmd).StdOut.ReadAll()
-return
+MessageBoxW(hWnd,Text, Caption,Options)
+{
+	return DllCall("MessageBoxW", "Int",hWnd, "Str", Text, "Str", Caption, "Int",Options)
+}
+
+http_get(text)
+{
+    ; Example: Download text to a variable:
+    whr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
+    url := "http://localhost:8088/translator?content=" text "&dst=zh"
+    whr.Open("GET", url, true)
+    whr.Send()
+    whr.WaitForResponse()
+}
