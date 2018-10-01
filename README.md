@@ -5,7 +5,7 @@ check the source code for more information. default is using google api (accessa
 # ./eztrans --help
 usage: eztrans [-h] [-s [S]] [-d [D]] content
 
-Simple commandline translator by https://github.com/matrix1001.
+Simple commandline translator by https://github.com/matrix1001
 
 positional arguments:
   content
@@ -38,3 +38,6 @@ i have written `msgserver` to oppose python api to http server.
 run the `ahk` script and the `server`, then use your mouse to choose any text.
 
 press ctrl+y and you will get a messagebox giving you the result of the translation.
+
+example:
+![Alt text](img/sample.png)
