@@ -29,6 +29,10 @@ este es un buen día hoy
 ```
 
 # use with msgserver and autohotkey
+run this at first
+```
+git submodule init && git submodule update
+```
 i have written `msgserver` to oppose python api to http server.
 
 run the `ahk` script and the `server`, then use your mouse to choose any text.
