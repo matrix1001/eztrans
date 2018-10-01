@@ -1,0 +1,3 @@
+[submodule "msgserver"]
+	path = msgserver
+	url = https://github.com/matrix1001/msgserver.git
