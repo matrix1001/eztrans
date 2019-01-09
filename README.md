@@ -27,17 +27,3 @@ este es un buen día hoy
 # ./eztrans -s en -d ja 'have a try'
 試してみる
 ```
-
-# use with msgserver and autohotkey
-run this at first
-```
-git submodule init && git submodule update
-```
-i have written `msgserver` to oppose python api to http server.
-
-run the `ahk` script and the `server`, then use your mouse to choose any text.
-
-press ctrl+y and you will get a messagebox giving you the result of the translation.
-
-example:
-![Alt text](img/sample.png)
